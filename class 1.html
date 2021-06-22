@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>class 1</title>
+        <style>
+            .dautrang{
+                padding: 20px;
+                border: 2px solid blue;
+                color: aqua;
+                float: inherit;
+                margin-top: 10px;
+            }
+            .giuatrang{
+                padding: 20px;
+                border: 2px solid rebeccapurple;
+                color:yellow;
+                float: inherit;
+                margin-top: 10px;
+                background-color: black;
+            }
+            .giuaTrang{
+                padding: 20px;
+                border: 2px solid red;
+                color: aqua;
+                float: inherit;
+                margin-top: 10px;
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="dautrang">
+   <h1> This is top of page </h1>
+   <img src="123456.jpg" width="200" height="200px" alt="request">
+   </div> 
+   <div class="giuatrang">
+       <h1> Luong Son high school</h1>
+   </div> 
+   <div class="dautrang">
+       <h2>Xuan Tan - Luong Son</h2>
+   </div>  
+   <p class="dautrang dautrang">
+       Yen Lap - Phu Tho
+   </p>
+   <p class="giuaTrang">
+       xin chao
+   </p>
+   <br>
+   <script>
+       function show(){
+           var x= document.getElementsByClassName("dautrang");
+           for (var i=0; i<= x.length;i++){
+               x [i].style.display = "none";
+           }
+       }
+   </script>
+   <button onclick="show();">city: Hanoi</button>
+   <p class="city">
+       i'm not her 
+   </p>
+   </body>
+</html>
